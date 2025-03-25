@@ -1,0 +1,175 @@
+:root {
+    --primary-color: #2563eb;
+    --primary-hover: #1d4ed8;
+    --background-light: #f8fafc;
+    --border-color: #333537;
+    --text-muted: #094eae;
+    --primary-text-color: #000000; 
+}
+
+
+h1, h2, h3,h4 {
+    color: var(--primary-text-color);
+}
+
+.create-blog-container {
+    max-width: 1400px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .create-blog-container {
+    background: #1e1e1e; 
+}
+
+.create-blog-container h2 {
+    font-size: 1.875rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.editor-preview-container {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.editor {
+    flex: 1;
+    background-color: var(--background-light);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.editor input,
+.editor textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 2px solid var(--border-color);
+    border-radius: 0.375rem;
+    font-size: 1rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    box-sizing: border-box;
+    color: var(--primary-text-color);
+    background: white;
+}
+
+.dark-mode .editor input,
+.dark-mode .editor textarea {
+    background: #2d2d2d;
+    border-color: #4b5563;
+    color: #f8fafc;
+}
+
+.editor input:focus,
+.editor textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.editor textarea {
+    padding: 0.75rem 1rem;
+    min-height: 100px; 
+    max-height: 500px; 
+    overflow-y: auto;
+    resize: auto; 
+    display: block;
+}
+
+
+.editor textarea {
+    transition: height 0.2s ease-in-out;
+}
+
+.editor button {
+    display: inline-flex;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 500;
+    border-radius: 0.375rem;
+    transition: background-color 0.2s;
+    border: none;
+    cursor: pointer;
+}
+
+.editor button:hover {
+    background-color: var(--primary-hover);
+}
+
+.preview {
+    flex: 1;
+    background: white;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.dark-mode .preview {
+    background: #2d2d2d;
+}
+
+.preview h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.preview-content {
+    line-height: 1.7;
+    color: var(--primary-text-color);
+    overflow-y: auto;
+    max-height: 500px;
+}
+
+.preview-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.preview-content::-webkit-scrollbar-track {
+    background: var(--background-light);
+}
+
+.preview-content::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+}
+
+.message {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-radius: 0.375rem;
+    background-color: #dcfce7;
+    color: #166534;
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .create-blog-container {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .editor-preview-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .editor textarea {
+        min-height: 300px;
+    }
+}
