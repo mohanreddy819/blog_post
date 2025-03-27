@@ -6,7 +6,7 @@ import DOMPurify from "dompurify";
 import "./styles.css";
 
 const API_URL = "http://127.0.0.1:8000/api/blogs/";
-const BLOGS_PER_PAGE = 5; // 5 blogs per page
+const BLOGS_PER_PAGE = 5; 
 
 function BlogList({ theme }) {
     const [blogs, setBlogs] = useState([]);

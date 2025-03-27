@@ -33,7 +33,7 @@ class BlogPostViewSet(viewsets.ModelViewSet):
         serializer.save()
 
 
-# ✅ User Registration
+
 @api_view(['POST'])
 @permission_classes([AllowAny])
 def register_user(request):
@@ -47,7 +47,7 @@ def register_user(request):
     token = Token.objects.create(user=user)
     return Response({"token": token.key}, status=status.HTTP_201_CREATED)
 
-# ✅ User Login
+
 @api_view(['POST'])
 @permission_classes([AllowAny])
 def login_user(request):
@@ -65,7 +65,7 @@ def login_user(request):
 @permission_classes([IsAuthenticated])
 def logout_user(request):
     try:
-        # Delete the user's token (forcing them to log in again)
+       
         request.user.auth_token.delete()
         return Response({"message": "Logged out successfully"}, status=status.HTTP_200_OK)
     except:

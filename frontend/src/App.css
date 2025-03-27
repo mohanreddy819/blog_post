@@ -112,7 +112,7 @@ body {
   margin: 10px 0;
 }
 
-/* Read More Button */
+
 .read-more-button {
   background: #007bff;
   color: white;
@@ -127,7 +127,7 @@ body {
   background: #0056b3;
 }
 
-/* Dark Theme */
+
 body.dark {
   background-color: #1e1e1e;
   color: white;

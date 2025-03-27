@@ -3,10 +3,10 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import { marked } from "marked";
 import DOMPurify from "dompurify";
-import "./styles.css"; // Ensure styles are consistent
+import "./styles.css"; 
 
 const API_URL = "http://127.0.0.1:8000/api/blogs/";
-const BLOGS_PER_PAGE = 5; // Number of blogs per page
+const BLOGS_PER_PAGE = 5; 
 
 function ProfilePage({ theme }) {
     const [blogs, setBlogs] = useState([]);

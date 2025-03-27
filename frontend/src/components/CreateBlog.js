@@ -61,8 +61,8 @@ function CreateBlog() {
                 value={content}
                 onChange={(e) => {
                 setContent(e.target.value);
-                e.target.style.height = "auto"; // Reset height
-                e.target.style.height = e.target.scrollHeight + "px"; // Set height dynamically
+                e.target.style.height = "auto"; 
+                e.target.style.height = e.target.scrollHeight + "px"; 
                 }}
                 placeholder="Write your blog (in Marked.js Format)..."
             />

@@ -6,7 +6,7 @@ router = DefaultRouter()
 router.register(r'blogs', BlogPostViewSet)
 
 urlpatterns = [
-    path('', include(router.urls)),  # CRUD operations for blogs
+    path('', include(router.urls)), 
     path('register/', register_user, name='register'),
     path('login/', login_user, name='login'),
     path('logout/', logout_user, name='logout'),

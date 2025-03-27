@@ -21,7 +21,7 @@ function Register() {
     const handleRegister = async (e) => {
         e.preventDefault();
 
-        // Basic validation
+        
         if (formData.password !== formData.confirmPassword) {
             setMessage("Passwords do not match.");
             return;
@@ -34,7 +34,7 @@ function Register() {
                 password: formData.password,
             });
 
-            localStorage.setItem("token", response.data.token);  // Store token
+            localStorage.setItem("token", response.data.token);  
             setMessage("Registration successful! You can now log in.");
             setTimeout(() => {
                 navigate("/BlogList");

@@ -24,7 +24,7 @@ h1, h2, h3, h4 {
     color: #222;
 }
 
-/* Dark Mode */
+
 .blog-detail-container.dark {
     background: #1e1e1e;
     color: #eaeaea;
@@ -44,7 +44,7 @@ h1, h2, h3, h4 {
     border-radius: 8px;
 }
 
-/* Sepia Mode */
+
 .blog-detail-container.sepia {
     background: #f5e1c0;
     color: #5b4636;
@@ -62,7 +62,7 @@ h1, h2, h3, h4 {
     border: 1px solid #c8a07e;
 }
 
-/* Light Mode (default) */
+
 .blog-title {
     text-align: center;
     font-size: 50px;
@@ -117,7 +117,7 @@ h1, h2, h3, h4 {
     color: #777;
 }
 
-/* Button Styles */
+
 .button-group {
     display: flex;
     justify-content: center;
@@ -152,7 +152,7 @@ h1, h2, h3, h4 {
     background-color: #c82333;
 }
 
-/* Loading Message */
+
 .loading-message {
     text-align: center;
     font-size: 22px;
